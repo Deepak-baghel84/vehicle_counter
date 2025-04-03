@@ -75,23 +75,23 @@ while True :
         cx,cy = (x+w//2,y+h//2)
         cvzone.putTextRect(frame,f"ID:{id}",(x,y-10),scale=1,thickness=1,colorR=(136,77,232),offset=5)
         
-        if limits_l[0]-5 < cx < limits_l[1]+5  and limits_l[2]-5  < cy < limits_l[3]+5  :
+        if 50 < cx < 235  and 195  < cy < 205  :
             if id not in store_id:
                 count_obj_l += 1
                 cv2.line(frame,(limits_l[0],limits_l[1]),(limits_l[2],limits_l[3]),(16,16,255),3)
                 store_id.append(id)
                 
                 #print("left_object_count:",count_obj)
-        cvzone.putTextRect(frame,f"left_vehicles: {count_obj_l}",(25,30),scale=1,thickness=1,colorR=(100,0,255))
+        cvzone.putTextRect(frame,f"left_vehicles: {count_obj_l}",(25,30),scale=1,thickness=2,colorR=(100,222,220),colorT = (224,29,55))
 
-        if limits_r[0]-5 < cx < limits_r[1]+5  and limits_r[2]-5  < cy < limits_r[3]+5 :
+        if 275 < cx < 490  and 220 < cy < 230 :
             if id not in store_id:
                 count_obj_r += 1
                 cv2.line(frame,(limits_r[0],limits_r[1]),(limits_r[2],limits_r[3]),(16,16,255),3)
                 store_id.append(id)
                 
                 #print("left_object_count:",count_obj)
-        cvzone.putTextRect(frame,f"right_vehicles: {count_obj_r}",(350,30),scale=1,thickness=1,colorR=(100,0,255))
+        cvzone.putTextRect(frame,f"right_vehicles: {count_obj_r}",(350,30),scale=1,thickness=2,colorR=(100,222,220),colorT = (224,29,55))
 
 
     count_frame += 1
