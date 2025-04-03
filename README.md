@@ -8,6 +8,11 @@ This project is a real-time vehicle counting system using YOLO for object detect
 - Using SORT for multi-object tracking which uses kalman filtering internally.
 - Utilizes multithreading for efficient frame capture and processing(working).
 
+## detector file
+- Detect file is used to detect or track the objects real world as well as video.
+- Detect file uses Bytetracker for tracking internally.
+- using threading, oops and other advance techniques for efficient processing and real time detection of objects in a video or image sequence.
+
 ## Installation
 1. Clone the repository:
    ```bash
