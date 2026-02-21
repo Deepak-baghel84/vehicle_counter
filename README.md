@@ -16,7 +16,7 @@ This project is a real-time vehicle counting system using YOLO for object detect
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/vehicle-counter.git
+   git clone https://github.com/Deepak-baghel84/vehicle-counter.git
    cd vehicle-counter
 
 2. Clone the SORT repository:
